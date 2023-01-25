@@ -1,6 +1,6 @@
 import requests
 
-# Invocar a API
+# Invocar a API ISLA
 url = 'http://instituto.islagaia.pt/ws/wsrifa.asmx/Rifa'
 response = requests.get(url)
 
