@@ -13,19 +13,19 @@ for item in lista_equipamentos:
     print (item)
 
 while x != 1:
-    nome_equipamento = input("Nome equipamento (sair/terminar): ")
+    nome_equipamento = input("Nome equipamento (sair p/terminar): ")
     if nome_equipamento == "sair":
         x=1
         break
     else:
-        for item in lista_equipamentos
+        for item in lista_equipamentos:
             if item == nome_equipamento:
                 y = y + 1
-    if y !=0:
+    if y != 0:
         print("Existem"+ str(y)+ "equipamentos que mencionou")
     else:
         print("Equipamento não existe na lista!")
-            
+
                     
 
         
