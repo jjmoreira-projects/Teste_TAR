@@ -1,9 +1,7 @@
 import requests
-url = "http://instituto.islagaia.pt/ws/wsrifa.asmx/Rifa"
-response = requests.get(url)
+import xml.etree.ElementTree as ET
 
-if response.status_code == 200:
-    print(response.text)
-else:
-    print("Erro ao acessar a API. Código de status", response.status_codee)
-        
+response = requests.get("http://instituto.islagaia.pt/ws/wsrifa.asmx/Rifa")
+root = ET.fromstring(response.content)
+print(root.text)
+
